@@ -1,0 +1,9 @@
+package com.app.demomvimaster.data.repository
+
+import com.app.demomvimaster.data.api.ApiHelper
+
+class MainRepository (private val apiHelper: ApiHelper) {
+
+    suspend fun getUsers() = apiHelper.getUsers()
+
+}
